@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="pay-section">
+    <div class="transition">
+      <img class="clock-transition" src="./assets/transition.gif" alt="" />
+      <h1 class="transition-text">Paying...</h1>
+    </div>
+    <header>
+      <section class="paying">
+        <div class="payment">
+            <img src="./assets/925-9251378_check-transparent-check-mark-circle.png" alt="">
+          <h1>Payment succesful!</h1>
+        </div>
+      </section>
+    </header>
+    <script>
+      var transition = document.querySelector(".transition");
+      console.log(transition)
+      if (transition) {
+        setTimeout(function () {
+          transition.style.display = "none";
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div class="intro">
+      <img class="clock-intro" src="./assets/intro-clock.gif" alt="" />
+      <h1 class="intro-text">Welcome to the Clock Tower</h1>
+    </div>
+    <section class="background-clock">
+      <!-- navigasi kiri -->
+      <nav class="lr-clock">
+        <img src="./assets/left-right-clock.gif" alt="">
+        <img src="./assets/left-right-clock.gif" alt="">    
+        <img src="./assets/left-right-clock.gif" alt="">
+      </nav>
+      <!-- navigasi kanan -->
+      <nav class="lr-clock">
+        <img src="./assets/left-right-clock.gif" alt="">
+        <img src="./assets/left-right-clock.gif" alt="">
+        <img src="./assets/left-right-clock.gif" alt="">
+      </nav>
+    </section>
+    <main>
+      <section id="products">
+        <div
+          class="products"
+        >
+          <div class="products-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
+            <img class="clock-product" src="./assets/sleek-vector-clock-icon-minimalist-design-black-background_983420-24879.png" alt="" />
+            <article>
+              <h2>modern clock, 1000$</h2>
+            </article>
+            <a href="./payment.html"><button>Buy</button></a>
+          </div>
+          <div class="products-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
+            <img class="clock-product" src="./assets/Simple Clock Face-Videvo PNG_small.jpg" alt="" />
+            <article>
+              <h2>
+                old clock, 450$
+              </h2>
+            </article>
+            <a href="./payment.html"><button>Buy</button></a>
+          </div>
+          <div class="products-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+            <img class="clock-product" src="./assets/reverse-clock.gif" style="width: 25vw;" alt="" />
+            <article>
+              <h2>oh my god is reversing clock, 9999 gazillion dollar</h2>
+            </article>
+            <a href="./payment.html"><button>Buy</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">
+          big black clock tower
+        </h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2077. Dreamy. all rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+
+      var intro = document.querySelector(".intro");
+      if (intro) {
+        document.addEventListener("DOMContentLoaded", function (event) {
+          setTimeout(function () {
+            intro.style.display = "none";
+          }, 3000);
+        });
+      }
+    </script>
+  </body>
+</html>
